@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     async function getData() {
-      const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${ city }&appid=901d672d14c778eefb41af3fd3871f1f&units=metric`)
+      const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${ city }&appid=34fb560878911fc3db61d9944cbe72b4&units=metric`)
       setCelsius(Math.floor((res.data.main.temp)));
       setFLike(Math.floor((res.data.main.feels_like)));
       setDescription(res.data.weather[0].description)
